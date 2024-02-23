@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 7rem; 
+}
+body{
+    background-color: #eee;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: black;
+}
+.heading span{
+    background-color: orange;
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem 1.5rem;
+    clip-path: polygon(100% 0,93% 50%, 100% 99%, 0% 100%,7% 50%,0% 0%);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid black;
+    color: black;
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+}
+.btn:hover{
+    background: orange;
+    color: #fff;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    background: #fff;
+}
+.header .logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+.header .logo i{
+    color: orange;
+}
+.header .nav{
+    list-style: none;
+    word-spacing: 15px;
+
+}
+.header .nav a{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+}
+.header .nav a:hover {
+    color: orange;
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background: #eee;
+    color: black;
+    border-radius: .5rem;
+    font-size: 2rem;
+    margin-left: .3rem;
+    text-align: center ;
+}
+.header .icons div:hover{
+    background: orange;
+    color: black;
+}
+
+.header .form-text{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 40rem;
+    height: 4rem ;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.header .form-text.active{
+      right: 2rem;
+      transition: .4s linear;
+}
+.header .form-text input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: black;
+    padding: 0 1.6rem;
+}
+.header .form-text label{
+    font-size: 2.5rem;
+    padding-right: 1.3rem;
+    color: black;
+    cursor: pointer;
+}
+.header .form-text label:hover{
+    color: orange;
+}
+
+.header .shoping-cart{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+   padding: 1rem;
+   background: #fff;
+   width: 30rem;
+   border-radius:  .5rem;
+   box-shadow: orange;
+    
+}
+.header .shoping-cart.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    padding: 2rem ;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.header .login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+.header .login-form p{
+    font-size: 1.5rem;
+    padding: .7rem 0;
+}
+.header .login-form p a{
+    color: orange;
+    text-decoration: underline;
+}
+
+
+/* media quaries */
+
+@media (max-width:991px ){
+     html{
+       font-size: 55%;
+     }
+    .header {
+     padding: 2rem;
+     }
+     section{
+        padding: 2rem;
+     }
+}
+@media (max-width:768px ){
+
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .form-text{
+        width: 90%;
+    }
+      .header .nav{
+           position: absolute;
+           top: 110%; right: -110%;
+           width: 30rem;
+           background: #fff;
+           border-radius: .5rem;
+           
+      }
+      .header .nav.active{
+        right: 2rem;
+        transition: .4s linear;
+      }
+      .header .nav a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem ;
+        display: block;
+      }
+
+}
+@media (max-width:450px){
+      html{
+      font-size: 50%;
+      }
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/jakub-kapusnak-sDbj1dFlFPU-unsplash.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+.home .content h3{
+    color: black;
+    font-size: 3rem;
+}
+.home .content p{
+    color: black;
+    font-size: 2rem;
+}
+
+
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+.features .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(yellow);
+    outline-offset: -1rem;
+    text-align: center;
+}
+.features .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+.features .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: black;
+}
+.features .box-container .box p{
+    font: .7rem;
+    list-style: 1.8;
+    color: gray;
+    padding: 1rem 0;
+}
+
+.products .product-slider{
+    padding: 1rem;
+}
+.products .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+.products .product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: blue;
+    border: .5px solid gray;
+}
+.products .product-slider .box img{
+    height: 20rem;
+
+}
+.products .product-slider .box h3{
+    font-size: 3rem;
+    color: black;
+}
+.products .product-slider .box .price{
+    font-size: 2rem;
+    color: gray;
+    padding: .5rem 0;
+}
+.products .product-slider .box .stars i{
+    font-size: 1.7rem;
+    color: orange;
+    padding: .5rem 0;
+}
+
+
+
+.categories .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+}
+.categories .box-container .box{
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    outline: var(yellow);
+    outline-offset: -1rem;
+    text-align: center;
+}
+.categories .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+.categories .box-container .box h3{
+    font-size: 2rem;
+    color: black;
+
+}
+.categories .box-container .box p{
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.review .review-slider{
+    padding: 1rem;
+}
+.review .review-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: blue;
+    border: .5px solid gray;
+}
+.review .review-slider .box img{
+    height: 20rem;
+}
+.review .review-slider .box p{
+    font-size: 1.5rem;
+    color: gray;
+
+}
+.review .review-slider .box h3{
+    font-size: 3rem;
+    color: black;
+}
+.review .review-slider .box .stars{
+    color: orange;
+    font-size: 1.7rem;
+}
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem; 
+}
+.blogs .box-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    background: #fff;
+}
+.blogs .box-container .box img{
+    height: 25rem;
+    width: 100%;
+}
+.blogs .box-container .box .content{
+
+    padding: 2rem;
+    text-align: center;
+}
+.blogs .box-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    
+    
+}
+.blogs .box-container .box .content .icons a{
+    color: black;
+    font-size: 1.5rem;
+}
+.blogs .box-container .box .content .icons a:hover{
+    color: orange;
+}
+.blogs .box-container .box .content h3{
+    font-size: 2rem;
+    color: black;
+}
+.blogs .box-container .box .content p{
+    font-size: 1.5rem;
+    color: gray;
+}
+
+
+.footer{
+    background: #fff;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+.footer .box-container .box h3 i{
+    color: orange;
+}
+.footer .box-container .box a.links{
+    display: block;
+    font-size: 1.1rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.footer .box-container .box a.links i{
+    color: orange;
+    padding-right: .5rem;
+
+}
+.footer .box-container .box a.links:hover i{
+    padding-right: 2rem;
+}
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+.footer .box-container .box a:hover{
+    color: orange;
+}
+.footer .box-container .box .email{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.5rem;
+    color: black;
+    text-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
